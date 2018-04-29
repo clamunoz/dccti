@@ -1,0 +1,801 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .   
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix bmm:   <http://parra.chillan.ubiobio.cl:8070/clamunoz/bmm#> .
+@prefix dcct: <http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#> . 
+
+dcct:plan2015 rdf:type bmm:BusinessPlan .
+dcct:plan2015 dc:title "PE DCCTI 2015-2019" .
+dcct:plan2015 dcct:CreationDate "30-10-2017".
+dcct:plan2015 dcct:Creator "DCCTI" .
+dcct:plan2015 dc:defines dcct:mission .
+dcct:plan2015 dc:defines dcct:vision .
+dcct:plan2015 dc:defines dcct:strategy1 .
+dcct:plan2015 dc:defines dcct:tactic1 .
+dcct:plan2015 dc:defines dcct:goal1 .
+dcct:plan2015 dc:defines dcct:objective1 .
+
+
+dcct:mission rdf:type bmm:Mission .
+dcct:mission bmm:elementOf dcct:plan2015 .  
+dcct:mission bmm:identifier "mis1" . # obligatorio
+dcct:mission bmm:title "Mission 1" . # obligatorio
+dcct:mission bmm:description "Cultivar las disciplinas de Ciencias de la Computación y Tecnologías de la Información, a fin de contribuir en la formación de profesionales a través de la docencia de pre y postgrado, difundiendo el conocimiento asociado a estas, tanto a la comunidad científica como a la sociedad en su conjunto, impulsando el emprendimiento y la innovación para el desarrollo regional y nacional." . # obligatorio
+dcct:mission bmm:makesOperative dcct:vision .  # Property makesOperative
+dcct:mission bmm:isPlanedByMeansOf dcct:strategy1 .   # Property isPlanedByMeansOf 
+
+dcct:vision rdf:type bmm:Vision .
+dcct:vision bmm:elementOf dcct:plan2015 .
+dcct:vision bmm:identifier "vis1" . 
+dcct:vision bmm:title "Vision 1" .
+dcct:vision bmm:description "Ser reconocido por su aporte académico y científico en el área de Ciencias de la Computación y  Tecnologías de Información a nivel regional, nacional e internacional; con un cuerpo académico de excelencia, vinculado con el medio, integrado a redes científicas y académicas, que contribuya a la formación de personas integrales y socialmente responsables." . 
+
+########################################################################################################################################
+########################################################################################################################################
+
+dcct:strategy1 rdf:type bmm:Strategy .
+dcct:strategy1 bmm:elementOf dcct:plan2015 .
+dcct:strategy1 bmm:identifier "str1" .
+dcct:strategy1 bmm:title "Strategy 1" .
+dcct:strategy1 bmm:description "DOCENCIA DE PREGRADO FORMANDO PERSONAS INTEGRALES DE EXCELENCIA PARA EL DESARROLLO DE LA SOCIEDAD." .
+dcct:strategy1 bmm:isPlanedByMeansOf dcct:mission.  #Property isPlanedByMeansOf 
+dcct:strategy1 bmm:supports dcct:goal1.  #Property support
+dcct:strategy1 bmm:supports dcct:goal2.  #Property support
+dcct:strategy1 bmm:supports dcct:goal3.  #Property support
+dcct:strategy1 bmm:supports dcct:goal4.  #Property support
+dcct:strategy1 bmm:supports dcct:goal5.  #Property support
+
+dcct:tactic1 rdf:type bmm:Tactic .
+dcct:tactic1 bmm:elementOf dcct:plan2015 . 
+dcct:tactic1 bmm:identifier "tac1" .
+dcct:tactic1 bmm:title "Tactic 1" .
+dcct:tactic1 bmm:validity "does not record validity" .
+dcct:tactic1 bmm:description "Fortalecer los sistemas de medición, seguimiento y control de las fases que comprenden el proceso de armonización de los programas de pregrado con el modelo educativo institucional, actualizando y sintonizando las normativas y reglamentación correspondiente." . 
+dcct:tactic1 bmm:implements dcct:strategy1 . #  Property implements 
+dcct:tactic1 bmm:achieves dcct:objective1 .  #  Property achieves
+dcct:tactic1 bmm:achieves dcct:objective2 .  #  Property achieves
+dcct:tactic1 bmm:achieves dcct:objective3 .  #  Property achieves
+
+dcct:goal1 rdf:type bmm:Goal .
+dcct:goal1 bmm:elementOf dcct:plan2015 . 
+dcct:goal1 bmm:identifier "goa1" .
+dcct:goal1 bmm:title "Goal 1" .
+dcct:goal1 bmm:description "Implementar sistema de seguimiento y monitoreo de los programas de pregrado renovados, considerando las normativas institucionales, planes de capacitación pedagógica para docentes y uso de plataformas y TICS." . 
+dcct:goal1 bmm:amplifies dcct:vision . #  Property amplifies 
+
+dcct:objective1 rdf:type bmm:Objective .
+dcct:objective1 bmm:elementOf dcct:plan2015 . 
+dcct:objective1 bmm:identifier "obj1" .
+dcct:objective1 bmm:title "Objective 1" .
+dcct:objective1 bmm:description "Convertir los programas de asignatura impartidas por el DCCTI al nuevo modelo educativo de la UBB - 100% de las asignaturas renovadas." .
+dcct:objective1 bmm:measure "(N° de asignaturas renovadas / N° de asignaturas que solicitan renovación al DCCTI) * 100.". 
+dcct:objective1 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective1 bmm:quantifies dcct:goal1 . #  Property amplifies 
+
+dcct:objective2 rdf:type bmm:Objective .
+dcct:objective2 bmm:elementOf dcct:plan2015 . 
+dcct:objective2 bmm:identifier "obj2" .
+dcct:objective2 bmm:title "Objective 2" .
+dcct:objective2 bmm:description "Capacitar a los docentes JC y JP en el proceso de seguimiento y monitoreo de acuerdo a la reglamentación vigente - 100% de los docentes capacitados." .
+dcct:objective2 bmm:measure "(N° docentes capacitados / N° docentes JC y JP)*100.". 
+dcct:objective2 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective2 bmm:quantifies dcct:goal1 . #  Property amplifies
+
+dcct:objective3 rdf:type bmm:Objective .
+dcct:objective3 bmm:elementOf dcct:plan2015 . 
+dcct:objective3 bmm:identifier "obj3" .
+dcct:objective3 bmm:title "Objective 3" .
+dcct:objective3 bmm:description "Usar plataformas educativas para la gestión en asignaturas impartidas por el DCCTI - 70% de asignaturas en plataformas educativas" .
+dcct:objective3 bmm:measure "(N° de asignaturas que usan plataformas educativas / Total de asignaturas impartidas por el DCCTI)*100." .   
+dcct:objective3 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective3 bmm:quantifies dcct:goal1 . #  Property amplifies
+
+########################################################################################################################################
+
+dcct:tactic2 rdf:type bmm:Tactic .
+dcct:tactic2 bmm:elementOf dcct:plan2015 . 
+dcct:tactic2 bmm:identifier "tac2" .
+dcct:tactic2 bmm:title "Tactic 2" .
+dcct:tactic2 bmm:validity "does not record validity" .
+dcct:tactic2 bmm:description "Fortalecer el proceso de autoevaluación permanente para lograr y mantener la acreditación de la totalidad de los programas de pregrado y postgrado acreditables." . 
+dcct:tactic2 bmm:implements dcct:strategy1 . #  Property implements 
+dcct:tactic2 bmm:achieves dcct:objective4 .  #  Property achieves
+
+dcct:goal2 rdf:type bmm:Goal .
+dcct:goal2 bmm:elementOf dcct:plan2015 . 
+dcct:goal2 bmm:identifier "goa2" .
+dcct:goal2 bmm:title "Goal 2" .
+dcct:goal2 bmm:description "Potenciar los procesos de autoevaluación de pre y post grado a través de la formalización de comités internos y externos, de manera de mejorar los resultados de Acreditación." . 
+dcct:goal2 bmm:amplifies dcct:vision . #  Property amplifies 
+
+dcct:objective4 rdf:type bmm:Objective .
+dcct:objective4 bmm:elementOf dcct:plan2015 . 
+dcct:objective4 bmm:identifier "obj4" .
+dcct:objective4 bmm:title "Objective 4" .
+dcct:objective4 bmm:description "Participar de reuniones por área de especialidad, para analizar y promover mejoras en planes de estudio y metodologías empleadas el en aula - 100% de asistentes." .
+dcct:objective4 bmm:measure "(N° de asistentes / N° de invitados)*100.". 
+dcct:objective4 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective4 bmm:quantifies dcct:goal2 .  
+
+#######################################################################################################################################
+
+dcct:tactic3 rdf:type bmm:Tactic .
+dcct:tactic3 bmm:elementOf dcct:plan2015 . 
+dcct:tactic3 bmm:identifier "tac3" .
+dcct:tactic3 bmm:title "Tactic 3" .
+dcct:tactic3 bmm:validity "does not record validity" .
+dcct:tactic3 bmm:description "Establecer políticas y gestionar recursos para mejorar la infraestructura y equipamiento para el desarrollo de las actividades académicas, docentes y extra programáticas de los estudiantes de la Universidad del Bío-Bío." . 
+dcct:tactic3 bmm:implements dcct:strategy1 . #  Property implements 
+dcct:tactic3 bmm:achieves dcct:objective5 .  #  Property achieves
+dcct:tactic3 bmm:achieves dcct:objective6 .  #  Property achieves
+
+dcct:goal3 rdf:type bmm:Goal .
+dcct:goal3 bmm:elementOf dcct:plan2015 . 
+dcct:goal3 bmm:identifier "goa3" .
+dcct:goal3 bmm:title "Goal 3" .
+dcct:goal3 bmm:description "Mejorar la infraestructura y equipamiento para el desarrollo de las actividades académicas de pre y post grado." . 
+dcct:goal3 bmm:amplifies dcct:vision . #  Property amplifies 
+
+dcct:objective5 rdf:type bmm:Objective .
+dcct:objective5 bmm:elementOf dcct:plan2015 . 
+dcct:objective5 bmm:identifier "obj5" .
+dcct:objective5 bmm:title "Objective 5" .
+dcct:objective5 bmm:description "Elaborar un Plan de adquisición anual de equipamiento e insumos básicos - Plan elaborado y ejecutado al 100%" .
+dcct:objective5 bmm:measure "Plan elaborado". 
+dcct:objective5 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective5 bmm:quantifies dcct:goal3 .  
+
+dcct:objective6 rdf:type bmm:Objective .
+dcct:objective6 bmm:elementOf dcct:plan2015 . 
+dcct:objective6 bmm:identifier "obj6" .
+dcct:objective6 bmm:title "Objective 6" .
+dcct:objective6 bmm:description "Participar en la elaboración de un Plan de mejora anual de equipamiento por asignatura - Plan elaborado y ejecutado al 100% " .
+dcct:objective6 bmm:measure "plan formulado". 
+dcct:objective6 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective6 bmm:quantifies dcct:goal3 .  
+
+#######################################################################################################################################
+
+dcct:tactic4 rdf:type bmm:Tactic .
+dcct:tactic4 bmm:elementOf dcct:plan2015 . 
+dcct:tactic4 bmm:identifier "tac4" .
+dcct:tactic4 bmm:title "Tactic 4" .
+dcct:tactic4 bmm:validity "does not record validity" .
+dcct:tactic4 bmm:description "Fortalecer los procesos de articulación vertical, con la enseñanza media, tanto científico-humanista como técnico profesional, los programas de inserción y adaptación a la vida universitaria con la finalidad de mejorar la admisión y posicionar la oferta académica de la Universidad del Bío-Bío." . 
+dcct:tactic4 bmm:implements dcct:strategy1 . #  Property implements 
+dcct:tactic4 bmm:achieves dcct:objective7 .  #  Property achieves
+
+dcct:goal4 rdf:type bmm:Goal .
+dcct:goal4 bmm:elementOf dcct:plan2015 . 
+dcct:goal4 bmm:identifier "goa4" .
+dcct:goal4 bmm:title "Goal 4" .
+dcct:goal4 bmm:description "Fomentar la integración vertical con liceos, científicos humanistas, técnicos profesionales y CFT." . 
+dcct:goal4 bmm:amplifies dcct:vision . #  Property amplifies 
+
+dcct:objective7 rdf:type bmm:Objective .
+dcct:objective7 bmm:elementOf dcct:plan2015 . 
+dcct:objective7 bmm:identifier "obj7" .
+dcct:objective7 bmm:title "Objective 7" .
+dcct:objective7 bmm:description "Definir y/o desarrollar actividades tendientes a la articulación vertical (talleres, capacitaciones, otras). - 100% de actividades planificadas realizadas" .
+dcct:objective7 bmm:measure "(N° actividades realizadas / N° actividades planificadas)*100". 
+dcct:objective7 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective7 bmm:quantifies dcct:goal4 .  
+
+#######################################################################################################################################
+
+dcct:tactic5 rdf:type bmm:Tactic .
+dcct:tactic5 bmm:elementOf dcct:plan2015 . 
+dcct:tactic5 bmm:identifier "tac5" .
+dcct:tactic5 bmm:title "Tactic 5" .
+dcct:tactic5 bmm:validity "does not record validity" .
+dcct:tactic5 bmm:description "Potenciar las capacidades y competencias docentes de la dotación académica de la Universidad del Bío-Bío, para mejorar el desempeño en el aula y favorecer el desarrollo de la investigación en docencia." . 
+dcct:tactic5 bmm:implements dcct:strategy1 . #  Property implements 
+dcct:tactic5 bmm:achieves dcct:objective8 .  #  Property achieves
+dcct:tactic5 bmm:achieves dcct:objective9 .  #  Property achieves
+
+dcct:goal5 rdf:type bmm:Goal .
+dcct:goal5 bmm:elementOf dcct:plan2015 . 
+dcct:goal5 bmm:identifier "goa5" .
+dcct:goal5 bmm:title "Goal 5" .
+dcct:goal5 bmm:description "Fomentar la investigación en docencia e incentivar la participación de académicos en programas de capacitación docente." . 
+dcct:goal5 bmm:amplifies dcct:vision . #  Property amplifies 
+
+dcct:objective8 rdf:type bmm:Objective .
+dcct:objective8 bmm:elementOf dcct:plan2015 . 
+dcct:objective8 bmm:identifier "obj8" .
+dcct:objective8 bmm:title "Objective 8" .
+dcct:objective8 bmm:description "Incentivar la participación en proyectos de investigación en docencia de pregrado - 20%" .
+dcct:objective8 bmm:measure "(N° de docentes que postulan a proyectos internos (FDD o FIDIE) / N° de docentes del DCCTI)*100". 
+dcct:objective8 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective8 bmm:quantifies dcct:goal5 .  
+
+dcct:objective9 rdf:type bmm:Objective .
+dcct:objective9 bmm:elementOf dcct:plan2015 . 
+dcct:objective9 bmm:identifier "obj9" .
+dcct:objective9 bmm:title "Objective 9" .
+dcct:objective9 bmm:description "Incentivar la participación de docentes en programas de capacitación ligados a las metodologías de enseñanza-aprendizaje en el aula y herramientas de gestión institucional - 100% " .
+dcct:objective9 bmm:measure "(N° de docentes del DCCTI que han participado en cursos de capacitación docente/ N° de docentes del DCCTI.)*100". 
+dcct:objective9 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective9 bmm:quantifies dcct:goal5 .  
+
+
+########################################################################################################################################
+########################################################################################################################################
+
+dcct:strategy2 rdf:type bmm:Strategy .
+dcct:strategy2 bmm:elementOf dcct:plan2015 .
+dcct:strategy2 bmm:identifier "str2" .
+dcct:strategy2 bmm:title "Strategy 2" .
+dcct:strategy2 bmm:description "INVESTIGACIÓN, DESARROLLO E INNOVACIÓN APORTANDO CONOCIMIENTO AVANZADO AL ENTORNO." .
+dcct:strategy2 bmm:isPlanedByMeansOf dcct:mission.  #Property isPlanedByMeansOf 
+dcct:strategy2 bmm:supports dcct:goal6.  #Property support
+dcct:strategy2 bmm:supports dcct:goal7.  #Property support
+dcct:strategy2 bmm:supports dcct:goal8.  #Property support
+
+dcct:tactic6 rdf:type bmm:Tactic .
+dcct:tactic6 bmm:elementOf dcct:plan2015 . 
+dcct:tactic6 bmm:identifier "tac6" .
+dcct:tactic6 bmm:title "Tactic 6" .
+dcct:tactic6 bmm:validity "does not record validity" .
+dcct:tactic6 bmm:description "Consolidar la investigación y el postgrado como pilar fundamental de la productividad científica y su aporte como generador de capital humano avanzado de estándar internacional." . 
+dcct:tactic6 bmm:implements dcct:strategy2 . #  Property implements 
+dcct:tactic6 bmm:achieves dcct:objective10 .  #  Property achieves
+dcct:tactic6 bmm:achieves dcct:objective11 .  #  Property achieves
+dcct:tactic6 bmm:achieves dcct:objective12.  #  Property achieves
+
+dcct:goal6 rdf:type bmm:Goal .
+dcct:goal6 bmm:elementOf dcct:plan2015 . 
+dcct:goal6 bmm:identifier "goa6" .
+dcct:goal6 bmm:title "Goal 6" .
+dcct:goal6 bmm:description "Generar acciones y mecanismos que permitan aumentar la productividad académica en Investigación vinculada especialmente al postgrado." . 
+dcct:goal6 bmm:amplifies dcct:vision . #  Property amplifies 
+
+dcct:objective10 rdf:type bmm:Objective .
+dcct:objective10 bmm:elementOf dcct:plan2015 . 
+dcct:objective10 bmm:identifier "obj10" .
+dcct:objective10 bmm:title "Objective 10" .
+dcct:objective10 bmm:description "Fortalecer el perfil de investigador entre académicos" .
+dcct:objective10 bmm:measure "N° de proyectos de iniciación UBB aprobados / JCE - 3 proyectos en el periodo". 
+dcct:objective10 bmm:measure "N° de proyectos regulares aprobados UBB / JCE - 4 proyectos en el periodo". 
+dcct:objective10 bmm:measure "N° proyectos de investigación externos presentados /JCE - 7 proyectos y 3 grupos". 
+dcct:objective10 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective10 bmm:quantifies dcct:goal6 . #  Property amplifies 
+
+dcct:objective11 rdf:type bmm:Objective .
+dcct:objective11 bmm:elementOf dcct:plan2015 . 
+dcct:objective11 bmm:identifier "obj11" .
+dcct:objective11 bmm:title "Objective 11" .
+dcct:objective11 bmm:description "Incentivar la participación de estudiantes de pre y postgrado en proyectos y grupos de investigación" .
+dcct:objective11 bmm:measure "N° estudiantes que participan en grupos y proyectos de investigación - 10 estudiantes (considerando 7 proyectos y 3 grupos)". 
+dcct:objective11 bmm:measure "N° actividades de difusión de eventos (congresos, seminarios, etc.) - 4 actividades (una por año como mínimo)". 
+dcct:objective11 bmm:measure "Nro de estudiantes participantes en congresos - 10 estudiantes considerando que cada uno está involucrado en un artículo". 
+dcct:objective11 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective11 bmm:quantifies dcct:goal6 . #  Property amplifies
+
+dcct:objective12 rdf:type bmm:Objective .
+dcct:objective12 bmm:elementOf dcct:plan2015 . 
+dcct:objective12 bmm:identifier "obj12" .
+dcct:objective12 bmm:title "Objective 12" .
+dcct:objective12 bmm:description "Incrementar el número de publicaciones indexadas en ISI, SciELO y Scopu" .
+dcct:objective12 bmm:measure "Nº artículos enviados a revistas ISI y Scielo - 4 ISI  6 Scielo" .   
+dcct:objective12 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective12 bmm:quantifies dcct:goal6 . #  Property amplifies
+
+dcct:objective13 rdf:type bmm:Objective .
+dcct:objective13 bmm:elementOf dcct:plan2015 . 
+dcct:objective13 bmm:identifier "obj13" .
+dcct:objective13 bmm:title "Objective 13" .
+dcct:objective13 bmm:description "Incentivar el desarrollo de grupos de investigación" .
+dcct:objective13 bmm:measure "N° de grupos - 1 en vías de consolidación y 1 grupo en formación" .   
+dcct:objective13 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective13 bmm:quantifies dcct:goal6 . #  Property amplifies
+
+dcct:objective14 rdf:type bmm:Objective .
+dcct:objective14 bmm:elementOf dcct:plan2015 . 
+dcct:objective14 bmm:identifier "obj14" .
+dcct:objective14 bmm:title "Objective 14" .
+dcct:objective14 bmm:description "Incorporar técnicas y métodos de investigación" .
+dcct:objective14 bmm:measure "Nro de cursos de capacitación desarrollados - Dos seminarios de investigación con nuevas técnicas y métodos  Dos seminarios para uso de herramienta" .
+dcct:objective14 bmm:measure "(Nro de académicos participantes en cursos desarrollados /JCE)*100 - 80% JCE participando" .
+dcct:objective14 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective14 bmm:quantifies dcct:goal6 . #  Property amplifies
+
+#######################################################################################################################################
+
+dcct:tactic7 rdf:type bmm:Tactic .
+dcct:tactic7 bmm:elementOf dcct:plan2015 . 
+dcct:tactic7 bmm:identifier "tac7" .
+dcct:tactic7 bmm:title "Tactic 7" .
+dcct:tactic7 bmm:validity "does not record validity" .
+dcct:tactic7 bmm:description "Reforzar la vinculación de la investigación, innovación y emprendimiento para un mayor impacto a nivel nacional e internacional." . 
+dcct:tactic7 bmm:implements dcct:strategy2 . #  Property implements 
+dcct:tactic7 bmm:achieves dcct:objective15 .  #  Property achieves
+dcct:tactic7 bmm:achieves dcct:objective16 .  #  Property achieves
+
+dcct:goal7 rdf:type bmm:Goal .
+dcct:goal7 bmm:elementOf dcct:plan2015 . 
+dcct:goal7 bmm:identifier "goa7" .
+dcct:goal7 bmm:title "Goal 7" .
+dcct:goal7 bmm:description "Generar conocimiento aplicado que contribuya al desarrollo regional y del país" . 
+dcct:goal7 bmm:amplifies dcct:vision . #  Property amplifies 
+
+dcct:objective15 rdf:type bmm:Objective .
+dcct:objective15 bmm:elementOf dcct:plan2015 . 
+dcct:objective15 bmm:identifier "obj15" .
+dcct:objective15 bmm:title "Objective 15" .
+dcct:objective15 bmm:description "Promover la movilidad académica haciendo estancias y/o atrayendo capital avanzado" .
+dcct:objective15 bmm:measure "Nº visitante - 4 visitas de académicos externos (1 mes cada una visita)". 
+dcct:objective15 bmm:measure "Nº pasantías - Al menos 5 pasantías de 2 meses cada una". 
+dcct:objective15 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective15 bmm:quantifies dcct:goal7 .  
+
+dcct:objective16 rdf:type bmm:Objective .
+dcct:objective16 bmm:elementOf dcct:plan2015 . 
+dcct:objective16 bmm:identifier "obj16" .
+dcct:objective16 bmm:title "Objective 16" .
+dcct:objective16 bmm:description "Promover la participación de académicos en sociedades científicas ligadas al quehacer de la facultad" .
+dcct:objective16 bmm:measure "(N° de académicos afiliados/N° total JCE)*100 - 100% de los académicos". 
+dcct:objective16 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective16 bmm:quantifies dcct:goal7 .
+
+
+#######################################################################################################################################
+
+dcct:tactic8 rdf:type bmm:Tactic .
+dcct:tactic8 bmm:elementOf dcct:plan2015 . 
+dcct:tactic8 bmm:identifier "tac8" .
+dcct:tactic8 bmm:title "Tactic 8" .
+dcct:tactic8 bmm:validity "does not record validity" .
+dcct:tactic8 bmm:description "Fortalecer y difundir las políticas y mecanismos existentes en I+D+i+e y postgrado para alcanzar una mayor y mejor productividad global." . 
+dcct:tactic8 bmm:implements dcct:strategy2 . #  Property implements 
+dcct:tactic8 bmm:achieves dcct:objective17 .  #  Property achieves
+
+
+dcct:goal8 rdf:type bmm:Goal .
+dcct:goal8 bmm:elementOf dcct:plan2015 . 
+dcct:goal8 bmm:identifier "goa8" .
+dcct:goal8 bmm:title "Goal 8" .
+dcct:goal8 bmm:description "Fortalecer políticas y mecanismos internos de la FACE en I+D+i+e y postgrado para alcanzar una mayor y mejor productividad." . 
+dcct:goal8 bmm:amplifies dcct:vision . #  Property amplifies 
+
+dcct:objective17 rdf:type bmm:Objective .
+dcct:objective17 bmm:elementOf dcct:plan2015 . 
+dcct:objective17 bmm:identifier "obj17" .
+dcct:objective17 bmm:title "Objective 17" .
+dcct:objective17 bmm:description " Formalizar reuniones de investigación" .
+dcct:objective17 bmm:measure "Nº de reuniones realizadas / Nº de reuniones planificadas - Reuniones de divulgación, (i)áreas de trabajo, (ii) métodos y (iii) experiencias. 1 reunión cada 3 meses". 
+dcct:objective17 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective17 bmm:quantifies dcct:goal7 .  
+
+
+########################################################################################################################################
+########################################################################################################################################
+
+dcct:strategy3 rdf:type bmm:Strategy .
+dcct:strategy3 bmm:elementOf dcct:plan2015 .
+dcct:strategy3 bmm:identifier "str3" .
+dcct:strategy3 bmm:title "Strategy 3" .
+dcct:strategy3 bmm:description "POSTGRADO RESPONDIENDO CON EXCELENCIA A LOS DESAFÍOS DE LA SOCIEDAD." .
+dcct:strategy3 bmm:isPlanedByMeansOf dcct:mission.  #Property isPlanedByMeansOf 
+dcct:strategy3 bmm:supports dcct:goal9.  #Property support
+dcct:strategy3 bmm:supports dcct:goal10.  #Property support
+dcct:strategy3 bmm:supports dcct:goal11.  #Property support
+
+dcct:tactic9 rdf:type bmm:Tactic .
+dcct:tactic9 bmm:elementOf dcct:plan2015 . 
+dcct:tactic9 bmm:identifier "tac6" .
+dcct:tactic9 bmm:title "Tactic 6" .
+dcct:tactic9 bmm:validity "does not record validity" .
+dcct:tactic9 bmm:description "Fortalecer el área de postgrado para posicionarlo en el medio regional y nacional." . 
+dcct:tactic9 bmm:implements dcct:strategy3 . #  Property implements 
+dcct:tactic9 bmm:achieves dcct:objective18 .  #  Property achieves
+dcct:tactic9 bmm:achieves dcct:objective19 .  #  Property achieves
+dcct:tactic9 bmm:achieves dcct:objective20.  #  Property achieves
+
+dcct:goal9 rdf:type bmm:Goal .
+dcct:goal9 bmm:elementOf dcct:plan2015 . 
+dcct:goal9 bmm:identifier "goa9" .
+dcct:goal9 bmm:title "Goal 9" .
+dcct:goal9 bmm:description "Implementar un plan de fortalecimiento del postgrado del DCCTI para su posicionamiento." . 
+dcct:goal9 bmm:amplifies dcct:vision . #  Property amplifies 
+
+dcct:objective18 rdf:type bmm:Objective .
+dcct:objective18 bmm:elementOf dcct:plan2015 . 
+dcct:objective18 bmm:identifier "obj18" .
+dcct:objective18 bmm:title "Objective 18" .
+dcct:objective18 bmm:description "Fortalecer la relación entre las actividades de postgrado y de investigación, promoviendo el trabajo asociativo" .
+dcct:objective18 bmm:measure "(Número de ponencias/posters aceptadas en conferencias que involucran a alumnos y profesores de postgrado/ Número de ponencias/posters enviados a conferencias que involucran a alumnos y profesores de postgrado)*100 - 50% de aceptación de ponencias / posters enviados a conferencias ". 
+dcct:objective18 bmm:measure "(Número de artículos enviados a Revistas indexadas/ Número de tesis Terminadas en programas académicos)*100 - 100% de las tesis terminadas, de programas académicos, con un artículo enviado a una revista indexada" . 
+dcct:objective18 bmm:measure "(Número de tesis vinculadas a Proyectos o grupos de investigación de académicos del DCCTI/Número de tesis desarrolladas)*100 - 50% de las tesis vinculadas a proyectos o grupos de investigación de académicos.". 
+dcct:objective18 bmm:measure "Nro. de actividades de difusión del trabajo de académicos del DCCTI en investigación asociado a proyectos y/o grupos, dirigidas a alumnos de postgrado y pregrado últimos años - 2 anuales". 
+dcct:objective18 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective18 bmm:quantifies dcct:goal9 . #  Property amplifies 
+
+dcct:objective19 rdf:type bmm:Objective .
+dcct:objective19 bmm:elementOf dcct:plan2015 . 
+dcct:objective19 bmm:identifier "obj19" .
+dcct:objective19 bmm:title "Objective 19" .
+dcct:objective19 bmm:description "Implementar una estrategia de fortalecimiento del MCC orientada a su próxima acreditación." .
+dcct:objective19 bmm:measure "(Nro. de académicos que participan en publicaciones/Nro. de académicos del DCCTI)*100 - 100 % de participación por año.". 
+dcct:objective19 bmm:measure "(Nro de académicos del DCCTI que poseen la categoría C de postgrado UBB/ Nro. total de académicos del DCCTI que participan en el MCC)*100 - 80 % de participación". 
+dcct:objective19 bmm:measure "(Nro de académicos del DCCTI que participan en la elaboración de informe de autoevaluación/Nro. total de académicos del DCCTI que participan en el MCC)*100 - 100 % de participación". 
+dcct:objective19 bmm:measure "(Nro. de proyectos de investigación externos enviados por académicos del núcleo del MCC/Nro. de académicos del núcleo )*100 - 100 % de participación.". 
+dcct:objective19 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective19 bmm:quantifies dcct:goal9 . #  Property amplifies 
+
+dcct:objective20 rdf:type bmm:Objective .
+dcct:objective20 bmm:elementOf dcct:plan2015 . 
+dcct:objective20 bmm:identifier "obj20" .
+dcct:objective20 bmm:title "Objective 20" .
+dcct:objective20 bmm:description "Formular e implementar un plan de fortalecimiento de infraestructura y equipamiento del postgrado" .
+dcct:objective20 bmm:measure "(Número de espacios de trabajo para estudiantes del MCC/Número de estudiantes del MCC)*100 - Espacio disponible para el 50 % de los estudiantes.". 
+dcct:objective20 bmm:measure "Proyecto de ampliación del espacio destinado para alumnos de postgrado (trabajo y convivencia) - 1 proyecto presentado a la facultad". 
+dcct:objective20 bmm:measure "Nro. salas habilitadas para dictar clases por video conferencia - 1 sala en el periodo". 
+dcct:objective20 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective20 bmm:quantifies dcct:goal9 . #  Property amplifies 
+
+#######################################################################################################################################
+
+dcct:tactic10 rdf:type bmm:Tactic .
+dcct:tactic10 bmm:elementOf dcct:plan2015 . 
+dcct:tactic10 bmm:identifier "tac10" .
+dcct:tactic10 bmm:title "Tactic 10" .
+dcct:tactic10 bmm:validity "does not record validity" .
+dcct:tactic10 bmm:description "Fortalecer la institucionalidad del área de postgrado e Investigación que asegure una gestión eficiente, sostenible y de calidad." . 
+dcct:tactic10 bmm:implements dcct:strategy3 . #  Property implements 
+dcct:tactic10 bmm:achieves dcct:objective21 .  #  Property achieves
+dcct:tactic10 bmm:achieves dcct:objective22 .  #  Property achieves
+
+dcct:goal10 rdf:type bmm:Goal .
+dcct:goal10 bmm:elementOf dcct:plan2015 . 
+dcct:goal10 bmm:identifier "goa10" .
+dcct:goal10 bmm:title "Goal 10" .
+dcct:goal10 bmm:description "Generar mecanismos que permitan fortalecer la institucionalidad del postgrado e investigación" . 
+dcct:goal10 bmm:amplifies dcct:vision . #  Property amplifies 
+
+dcct:objective21 rdf:type bmm:Objective .
+dcct:objective21 bmm:elementOf dcct:plan2015 . 
+dcct:objective21 bmm:identifier "obj21" .
+dcct:objective21 bmm:title "Objective 21" .
+dcct:objective21 bmm:description "Iniciar y avanzar en la renovación curricular del MCC - " .
+dcct:objective21 bmm:measure "MCC con Sistema de Créditos Transferibles implementados - MCC con sistema de créditos transferibles implementado en el período" . 
+dcct:objective21 bmm:timetargeted "04-05-2015 al 31-12-2019" .
+dcct:objective21 bmm:quantifies dcct:goal10 .
+
+dcct:objective22 rdf:type bmm:Objective .
+dcct:objective22 bmm:elementOf dcct:plan2015 . 
+dcct:objective22 bmm:identifier "obj22" .
+dcct:objective22 bmm:title "Objective 22" .
+dcct:objective22 bmm:description "Aumentar la planta docente con académicos que contribuyan al postgrado - " .
+dcct:objective22 bmm:measure " Nro. contrataciones de doctores  -  2 contrataciones en el período" . 
+dcct:objective22 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective22 bmm:quantifies dcct:goal10 .
+
+########################################################################################################################################
+
+dcct:tactic11 rdf:type bmm:Tactic .
+dcct:tactic11 bmm:elementOf dcct:plan2015 . 
+dcct:tactic11 bmm:identifier "tac11" .
+dcct:tactic11 bmm:title "Tactic 11" .
+dcct:tactic11 bmm:validity "does not record validity" .
+dcct:tactic11 bmm:description "Avanzar en la internacionalización del postgrado contribuyendo al prestigio institucional." . 
+dcct:tactic11 bmm:implements dcct:strategy3 . #  Property implements 
+dcct:tactic11 bmm:achieves dcct:objective23 .  #  Property achieves
+dcct:tactic11 bmm:achieves dcct:objective24 .  #  Property achieves
+dcct:tactic11 bmm:achieves dcct:objective25 .  #  Property achieves
+
+dcct:goal11 rdf:type bmm:Goal .
+dcct:goal11 bmm:elementOf dcct:plan2015 . 
+dcct:goal11 bmm:identifier "goa11" .
+dcct:goal11 bmm:title "Goal 11" .
+dcct:goal11 bmm:description "Fortalecer las redes nacionales e internacionales para programas de postgrado" . 
+dcct:goal11 bmm:amplifies dcct:vision . #  Property amplifies 
+
+dcct:objective23 rdf:type bmm:Objective .
+dcct:objective23 bmm:elementOf dcct:plan2015 . 
+dcct:objective23 bmm:identifier "obj23" .
+dcct:objective23 bmm:title "Objective 23" .
+dcct:objective23 bmm:description "Establecer vínculos de cooperación con otros departamentos de la disciplina" .
+dcct:objective23 bmm:measure "Nro. de reuniones con otros deptos. de la disciplina de universidades nacionales y/o extranjeras - 2 reuniones anuales." . 
+dcct:objective23 bmm:measure "(Número de tribunales de defensa de tesis con participación de académicos de otras Universidades Nacionales o Extranjeras/Número de tribunales de defensa Tesis)*100 - 70% de tribunales de defensa tesis del MCC con académicos de otras universidades." . 
+dcct:objective23 bmm:measure "(Número de tribunales de defensa de propuesta tesis con participación de académicos de otras Universidades Nacionales o Extranjeras/Número de tribunales de defensa de propuesta de Tesis)*100 - 80% de tribunales de defensa de propuesta tesis del MCC con académicos de otras universidades" . 
+dcct:objective23 bmm:measure "Número académicos JC del DCCTI que participan en tribunales de tesis de otras universidades - 1 participación por año." . 
+dcct:objective23 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective23 bmm:quantifies dcct:goal11 .
+
+dcct:objective24 rdf:type bmm:Objective .
+dcct:objective24 bmm:elementOf dcct:plan2015 . 
+dcct:objective24 bmm:identifier "obj24" .
+dcct:objective24 bmm:title "Objective 24" .
+dcct:objective24 bmm:description "Avanzar hacia el alcance de presencia nacional e internacional a través del postgrado" .
+dcct:objective24 bmm:measure "Nro. de ponencias, de trabajos de estudiantes de postgrado, presentadas en conferencias y que involucran a profesores del DCCT - 2 ponencias por año" . 
+dcct:objective24 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective24 bmm:quantifies dcct:goal11 . 
+
+dcct:objective25 rdf:type bmm:Objective .
+dcct:objective25 bmm:elementOf dcct:plan2015 . 
+dcct:objective25 bmm:identifier "obj25" .
+dcct:objective25 bmm:title "Objective 25" .
+dcct:objective25 bmm:description "Incentivar el desarrollo de pasantías en otras universidades" .
+dcct:objective25 bmm:measure "Nro. de pasantías realizadas por los docentes del DCCTI. - Nro. de pasantías realizadas por los docentes del DCCTI." . 
+dcct:objective25 bmm:measure "Nro. de pasantías realizadas por estudiantes del MCC - 1 pasantía al año" . 
+dcct:objective25 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective25 bmm:quantifies dcct:goal11 . 
+
+########################################################################################################################################
+########################################################################################################################################
+
+dcct:strategy4 rdf:type bmm:Strategy .
+dcct:strategy4 bmm:elementOf dcct:plan2015 .
+dcct:strategy4 bmm:identifier "str4" .
+dcct:strategy4 bmm:title "Strategy 4" .
+dcct:strategy4 bmm:description "POSTGRADO RESPONDIENDO CON EXCELENCIA A LOS DESAFÍOS DE LA SOCIEDAD." .
+dcct:strategy4 bmm:isPlanedByMeansOf dcct:mission.  #Property isPlanedByMeansOf 
+dcct:strategy4 bmm:supports dcct:goal12.  #Property support
+dcct:strategy4 bmm:supports dcct:goal13.  #Property support
+dcct:strategy4 bmm:supports dcct:goal14.  #Property support
+
+dcct:tactic12 rdf:type bmm:Tactic .
+dcct:tactic12 bmm:elementOf dcct:plan2015 . 
+dcct:tactic12 bmm:identifier "tac12" .
+dcct:tactic12 bmm:title "Tactic 12" .
+dcct:tactic12 bmm:validity "does not record validity" .
+dcct:tactic12 bmm:description "Posicionar la marca Universidad del Bío-Bío" . 
+dcct:tactic12 bmm:implements dcct:strategy4 . #  Property implements 
+dcct:tactic12 bmm:achieves dcct:objective26 .  #  Property achieves
+dcct:tactic12 bmm:achieves dcct:objective27 .  #  Property achieves
+
+dcct:goal12 rdf:type bmm:Goal .
+dcct:goal12 bmm:elementOf dcct:plan2015 . 
+dcct:goal12 bmm:identifier "goa12" .
+dcct:goal12 bmm:title "Goal 12" .
+dcct:goal12 bmm:description "Generar mecanismos de un plan de posicionamiento disciplinario del DCCTI." . 
+dcct:goal12 bmm:amplifies dcct:vision . #  Property amplifies 
+
+dcct:objective26 rdf:type bmm:Objective .
+dcct:objective26 bmm:elementOf dcct:plan2015 . 
+dcct:objective26 bmm:identifier "obj18" .
+dcct:objective26 bmm:title "Objective 18" .
+dcct:objective26 bmm:description "Fomentar la participación de docentes en actividades de posicionamiento disciplinario" .
+dcct:objective26 bmm:measure "Número de asistentes/ Total de Invitados - Organización de un seminario anual de trabajos de investigación, tesis de magister y proyectos de título". 
+dcct:objective26 bmm:measure "Número de actualizaciones mensuales de la página web del departamento - Página web del depto actualizada y Participación en redes sociales" . 
+dcct:objective26 bmm:measure "Número de noticias en web de la UBB - Presencia de 2 académicos en la web de la UBB, con trabajos asociados a sus disciplinas ". 
+dcct:objective26 bmm:measure "Número De seminarios realizados - Organización de 3 seminarios dirigidos a la comunidad". 
+dcct:objective26 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective26 bmm:quantifies dcct:goal12 . #  Property amplifies 
+
+dcct:objective27 rdf:type bmm:Objective .
+dcct:objective27 bmm:elementOf dcct:plan2015 . 
+dcct:objective27 bmm:identifier "obj27" .
+dcct:objective27 bmm:title "Objective 27" .
+dcct:objective27 bmm:description "Crear Laboratorio de investigación y desarrollo en ingeniería de software" .
+dcct:objective27 bmm:measure "Laboratorio creado - Laboratorio institucionalizado y en operaciones". 
+dcct:objective27 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective27 bmm:quantifies dcct:goal12 . #  Property amplifies 
+
+#######################################################################################################################################
+
+dcct:tactic13 rdf:type bmm:Tactic .
+dcct:tactic13 bmm:elementOf dcct:plan2015 . 
+dcct:tactic13 bmm:identifier "tac13" .
+dcct:tactic13 bmm:title "Tactic 13" .
+dcct:tactic13 bmm:validity "does not record validity" .
+dcct:tactic13 bmm:description "Impulsar el uso de las redes de intercambio estudiantil y académico para la internacionalización de la Universidad del Bío-Bío" . 
+dcct:tactic13 bmm:implements dcct:strategy4 . #  Property implements 
+dcct:tactic13 bmm:achieves dcct:objective28 .  #  Property achieves
+
+dcct:goal13 rdf:type bmm:Goal .
+dcct:goal13 bmm:elementOf dcct:plan2015 . 
+dcct:goal13 bmm:identifier "goa13" .
+dcct:goal13 bmm:title "Goal 13" .
+dcct:goal13 bmm:description "Utilizar las redes de intercambio estudiantil y académico para la internacionalización del Departamento" . 
+dcct:goal13 bmm:amplifies dcct:vision . #  Property amplifies 
+
+dcct:objective28 rdf:type bmm:Objective .
+dcct:objective28 bmm:elementOf dcct:plan2015 . 
+dcct:objective28 bmm:identifier "obj28" .
+dcct:objective28 bmm:title "Objective 28" .
+dcct:objective28 bmm:description "Gestionar protocolos de colaboración con organizaciones nacionales con vínculos internacionales" .
+dcct:objective28 bmm:measure "Número De Protocolos formalizados - 3 protocolos formalizados". 
+dcct:objective28 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective28 bmm:quantifies dcct:goal13 . #  Property amplifies 
+
+#######################################################################################################################################
+
+dcct:tactic14 rdf:type bmm:Tactic .
+dcct:tactic14 bmm:elementOf dcct:plan2015 . 
+dcct:tactic14 bmm:identifier "tac14" .
+dcct:tactic14 bmm:title "Tactic 14" .
+dcct:tactic14 bmm:validity "does not record validity" .
+dcct:tactic14 bmm:description "Fortalecer los programas que desarrollan los ámbitos de vinculación con el medio" . 
+dcct:tactic14 bmm:implements dcct:strategy4 . #  Property implements 
+dcct:tactic14 bmm:achieves dcct:objective29 .  #  Property achieves
+
+dcct:goal14 rdf:type bmm:Goal .
+dcct:goal14 bmm:elementOf dcct:plan2015 . 
+dcct:goal14 bmm:identifier "goa14" .
+dcct:goal14 bmm:title "Goal 14" .
+dcct:goal14 bmm:description "Acrecentar la participación de académicos y estudiantes de pre y postgrado en proyectos concursables internos y externos de transferencia tecnológica" . 
+dcct:goal14 bmm:amplifies dcct:vision . #  Property amplifies 
+
+dcct:objective29 rdf:type bmm:Objective .
+dcct:objective29 bmm:elementOf dcct:plan2015 . 
+dcct:objective29 bmm:identifier "obj29" .
+dcct:objective29 bmm:title "Objective 29" .
+dcct:objective29 bmm:description "Fomentar la participación en Proyectos con financiamientos externo y contraparte externa" .
+dcct:objective29 bmm:measure "(Número De docentes postulando o participando / total de docentes del DCCTI)*100 - Al menos el 20% de los docentes del departamento postulando a proyectos ". 
+dcct:objective29 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective29 bmm:quantifies dcct:goal14 . #  Property amplifies 
+
+#######################################################################################################################################
+
+dcct:tactic15 rdf:type bmm:Tactic .
+dcct:tactic15 bmm:elementOf dcct:plan2015 . 
+dcct:tactic15 bmm:identifier "tac15" .
+dcct:tactic15 bmm:title "Tactic 15" .
+dcct:tactic15 bmm:validity "does not record validity" .
+dcct:tactic15 bmm:description "Involucrar a estudiantes de pre y postgrado en actividades de vinculación con el medio contribuyendo a su formación integral" . 
+dcct:tactic15 bmm:implements dcct:strategy4 . #  Property implements 
+dcct:tactic15 bmm:achieves dcct:objective30 .  #  Property achieves
+dcct:tactic15 bmm:achieves dcct:objective31 .  #  Property achieves
+dcct:tactic15 bmm:achieves dcct:objective32 .  #  Property achieves
+
+dcct:goal15 rdf:type bmm:Goal .
+dcct:goal15 bmm:elementOf dcct:plan2015 . 
+dcct:goal15 bmm:identifier "goa15" .
+dcct:goal15 bmm:title "Goal 15" .
+dcct:goal15 bmm:description "Incrementar participación de estudiantes de pre y postgrado en vinculación con el medio." . 
+dcct:goal15 bmm:amplifies dcct:vision . #  Property amplifies 
+
+dcct:objective30 rdf:type bmm:Objective .
+dcct:objective30 bmm:elementOf dcct:plan2015 . 
+dcct:objective30 bmm:identifier "obj30" .
+dcct:objective30 bmm:title "Objective 30" .
+dcct:objective30 bmm:description "Difundir mecanismos de postulación a proyectos de vinculación con el medio interno y externos" .
+dcct:objective30 bmm:measure "Número de actividades de difusión realizadas - Realizar 5 (una al año) actividades de difusión". 
+dcct:objective30 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective30 bmm:quantifies dcct:goal15 . #  Property amplifies 
+
+dcct:objective31 rdf:type bmm:Objective .
+dcct:objective31 bmm:elementOf dcct:plan2015 . 
+dcct:objective31 bmm:identifier "obj31" .
+dcct:objective31 bmm:title "Objective 31" .
+dcct:objective31 bmm:description "Desarrollar proyectos de extensión" .
+dcct:objective31 bmm:measure "Proyectos adjudicados - 2 proyectos desarrollados al año dirigidos por docentes del DCCTI con participación de estudiante". 
+dcct:objective31 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective31 bmm:quantifies dcct:goal15 . #  Property amplifies 
+
+dcct:objective32 rdf:type bmm:Objective .
+dcct:objective32 bmm:elementOf dcct:plan2015 . 
+dcct:objective32 bmm:identifier "obj32" .
+dcct:objective32 bmm:title "Objective 32" .
+dcct:objective32 bmm:description "Desarrollar proyectos de título en empresas" .
+dcct:objective32 bmm:measure "Proyectos finalizados - Mantener al menos un proyecto semestral.". 
+dcct:objective32 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective32 bmm:quantifies dcct:goal15 . #  Property amplifies 
+
+#######################################################################################################################################
+########################################################################################################################################
+########################################################################################################################################
+
+dcct:strategy5 rdf:type bmm:Strategy .
+dcct:strategy5 bmm:elementOf dcct:plan2015 .
+dcct:strategy5 bmm:identifier "str5" .
+dcct:strategy5 bmm:title "Strategy 5" .
+dcct:strategy5 bmm:description "" .
+dcct:strategy5 bmm:isPlanedByMeansOf dcct:mission.  #Property isPlanedByMeansOf 
+dcct:strategy5 bmm:supports dcct:goal16.  #Property support
+dcct:strategy5 bmm:supports dcct:goal17.  #Property support
+dcct:strategy5 bmm:supports dcct:goal18.  #Property support
+
+dcct:tactic16 rdf:type bmm:Tactic .
+dcct:tactic16 bmm:elementOf dcct:plan2015 . 
+dcct:tactic16 bmm:identifier "tac16" .
+dcct:tactic16 bmm:title "Tactic 16" .
+dcct:tactic16 bmm:validity "does not record validity" .
+dcct:tactic16 bmm:description "Consolidar la gestión administrativa eficiente y de calidad, que de apoyo a la academia" . 
+dcct:tactic16 bmm:implements dcct:strategy5 . #  Property implements 
+dcct:tactic16 bmm:achieves dcct:objective33 .  #  Property achieves
+dcct:tactic16 bmm:achieves dcct:objective34 .  #  Property achieves
+
+dcct:goal16 rdf:type bmm:Goal .
+dcct:goal16 bmm:elementOf dcct:plan2015 . 
+dcct:goal16 bmm:identifier "goa16" .
+dcct:goal16 bmm:title "Goal 16" .
+dcct:goal16 bmm:description "Disponer de mecanismos y/o protocolos que permitan consolidar la gestión administrativa para brindar apoyo a la academia." . 
+dcct:goal16 bmm:amplifies dcct:vision . #  Property amplifies 
+
+dcct:objective33 rdf:type bmm:Objective .
+dcct:objective33 bmm:elementOf dcct:plan2015 . 
+dcct:objective33 bmm:identifier "obj33" .
+dcct:objective33 bmm:title "Objective 33" .
+dcct:objective33 bmm:description "Realizar un diagnóstico del sistema de gestión del DCCTI, en términos de contrataciones, procedimientos administrativos, control de la docencia entre otros." .
+dcct:objective33 bmm:measure "Informe de diagnóstico finalizado - Octubre de 2015". 
+dcct:objective33 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective33 bmm:quantifies dcct:goal16 . #  Property amplifies 
+
+dcct:objective34 rdf:type bmm:Objective .
+dcct:objective34 bmm:elementOf dcct:plan2015 . 
+dcct:objective34 bmm:identifier "obj34" .
+dcct:objective34 bmm:title "Objective 34" .
+dcct:objective34 bmm:description "Diseñar procedimientos administración e Implementar un sistema informático que apoye la gestión del departamento en ámbitos de docencia e investigación" .
+dcct:objective34 bmm:measure "Informe con procedimientos - Diciembre de 2016". 
+dcct:objective34 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective34 bmm:quantifies dcct:goal16 . #  Property amplifies 
+
+#######################################################################################################################################
+
+dcct:tactic17 rdf:type bmm:Tactic .
+dcct:tactic17 bmm:elementOf dcct:plan2015 . 
+dcct:tactic17 bmm:identifier "tac17" .
+dcct:tactic17 bmm:title "Tactic 17" .
+dcct:tactic17 bmm:validity "does not record validity" .
+dcct:tactic17 bmm:description "Consolidar los procesos de planificación, seguimiento y ajuste de prioridades en el quehacer de la Universidad" . 
+dcct:tactic17 bmm:implements dcct:strategy5 . #  Property implements 
+dcct:tactic17 bmm:achieves dcct:objective35 .  #  Property achieves
+dcct:tactic17 bmm:achieves dcct:objective36 .  #  Property achieves
+
+dcct:goal17 rdf:type bmm:Goal .
+dcct:goal17 bmm:elementOf dcct:plan2015 . 
+dcct:goal17 bmm:identifier "goa17" .
+dcct:goal17 bmm:title "Goal 17" .
+dcct:goal17 bmm:description "Disponer acciones y mecanismos que permitan seguimiento y ajuste de prioridades de los procesos de planificación estratégica del DCCTI" . 
+dcct:goal17 bmm:amplifies dcct:vision . #  Property amplifies 
+
+dcct:objective35 rdf:type bmm:Objective .
+dcct:objective35 bmm:elementOf dcct:plan2015 . 
+dcct:objective35 bmm:identifier "obj35" .
+dcct:objective35 bmm:title "Objective 35" .
+dcct:objective35 bmm:description "Ajustar las actividades del DCCTI al plan de desarrollo estratégico del DCCTI." .
+dcct:objective35 bmm:measure "N° de acciones vinculadas a objetivos estratégicos - 100% propuestas alineadas con el plan estratégico". 
+dcct:objective35 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective35 bmm:quantifies dcct:goal17 . #  Property amplifies 
+
+dcct:objective36 rdf:type bmm:Objective .
+dcct:objective36 bmm:elementOf dcct:plan2015 . 
+dcct:objective36 bmm:identifier "obj36" .
+dcct:objective36 bmm:title "Objective 36" .
+dcct:objective36 bmm:description "Evaluar periódicamente el desarrollo del plan estratégico del DCCTI." .
+dcct:objective36 bmm:measure "N° de evaluaciones realizadas - 1 Evaluación anual ". 
+dcct:objective36 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective36 bmm:quantifies dcct:goal17 . #  Property amplifies 
+
+#######################################################################################################################################
+
+dcct:tactic18 rdf:type bmm:Tactic .
+dcct:tactic18 bmm:elementOf dcct:plan2015 . 
+dcct:tactic18 bmm:identifier "tac18" .
+dcct:tactic18 bmm:title "Tactic 18" .
+dcct:tactic18 bmm:validity "does not record validity" .
+dcct:tactic18 bmm:description "Fortalecer el clima laboral y la identidad institucional" . 
+dcct:tactic18 bmm:implements dcct:strategy5 . #  Property implements 
+dcct:tactic18 bmm:achieves dcct:objective37 .  #  Property achieves
+dcct:tactic18 bmm:achieves dcct:objective38 .  #  Property achieves
+
+dcct:goal18 rdf:type bmm:Goal .
+dcct:goal18 bmm:elementOf dcct:plan2015 . 
+dcct:goal18 bmm:identifier "goa18" .
+dcct:goal18 bmm:title "Goal 18" .
+dcct:goal18 bmm:description "Aplicación de prácticas de recursos humanos que permitan lograr el fortalecimiento del clima laboral y la identidad institucional" . 
+dcct:goal18 bmm:amplifies dcct:vision . #  Property amplifies 
+
+dcct:objective37 rdf:type bmm:Objective .
+dcct:objective37 bmm:elementOf dcct:plan2015 . 
+dcct:objective37 bmm:identifier "obj37" .
+dcct:objective37 bmm:title "Objective 37" .
+dcct:objective37 bmm:description "proponer espacios y ambientes seguros que favorezcan la interacción entre estudiantes, administrativos y académicos de la Facultad. (cafetería, espacios de descanso, ocio y esparcimiento)" .
+dcct:objective37 bmm:measure "porcentaje de incremento respecto de los espacios actuales - Meta: 20%". 
+dcct:objective37 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective37 bmm:quantifies dcct:goal18 . #  Property amplifies 
+
+dcct:objective38 rdf:type bmm:Objective .
+dcct:objective38 bmm:elementOf dcct:plan2015 . 
+dcct:objective38 bmm:identifier "obj38" .
+dcct:objective38 bmm:title "Objective 38" .
+dcct:objective38 bmm:description "Establecer un plan de fortalecimiento del clima laboral." .
+dcct:objective38 bmm:measure "plan formulado - Plan entrgado a decanatura". 
+dcct:objective38 bmm:timetargeted "04-05-2015 al 31-12-2019".
+dcct:objective38 bmm:quantifies dcct:goal18 . #  Property amplifies 
+#######################################################################################################################################
