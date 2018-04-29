@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc11="http://purl.org/dc/elements/1.1/"
+         xmlns:ns0="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#"
+         xmlns:ns1="http://parra.chillan.ubiobio.cl:8070/clamunoz/bmm#">
+
+  <rdf:Description rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015">
+    <rdf:type rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/bmm#BusinessPlan"/>
+    <dc11:title>PE DCCTI 2015-2019</dc11:title>
+    <ns0:CreationDate>30-10-2017</ns0:CreationDate>
+    <ns0:Creator>DCCTI</ns0:Creator>
+    <dc11:defines rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#mission"/>
+    <dc11:defines rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#vision"/>
+    <dc11:defines rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#strategy1"/>
+    <dc11:defines>
+      <rdf:Description rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#tactic1">
+        <rdf:type rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/bmm#Tactic"/>
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>tac1</ns1:identifier>
+        <ns1:title>Tactic 1</ns1:title>
+        <ns1:validity>does not record validity</ns1:validity>
+        <ns1:description>Fortalecer los sistemas de medición, seguimiento y control de las fases que comprenden el proceso de armonización de los programas de pregrado con el modelo educativo institucional, actualizando y sintonizando las normativas y reglamentación correspondiente.</ns1:description>
+        <ns1:implements rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#strategy1"/>
+        <ns1:achieves rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective1"/>
+        <ns1:achieves>
+          <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective2">
+            <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+            <ns1:identifier>obj2</ns1:identifier>
+            <ns1:title>Objective 2</ns1:title>
+            <ns1:description>Capacitar a los docentes JC y JP en el proceso de seguimiento y monitoreo de acuerdo a la reglamentación vigente - 100% de los docentes capacitados.</ns1:description>
+            <ns1:measure>(N° docentes capacitados / N° docentes JC y JP)*100.</ns1:measure>
+            <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+            <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal1"/>
+          </ns1:Objective>
+        </ns1:achieves>
+
+        <ns1:achieves>
+          <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective3">
+            <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+            <ns1:identifier>obj3</ns1:identifier>
+            <ns1:title>Objective 3</ns1:title>
+            <ns1:description>Usar plataformas educativas para la gestión en asignaturas impartidas por el DCCTI - 70% de asignaturas en plataformas educativas</ns1:description>
+            <ns1:measure>(N° de asignaturas que usan plataformas educativas / Total de asignaturas impartidas por el DCCTI)*100.</ns1:measure>
+            <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+            <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal1"/>
+          </ns1:Objective>
+        </ns1:achieves>
+
+      </rdf:Description>
+    </dc11:defines>
+
+    <dc11:defines rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal1"/>
+    <dc11:defines rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective1"/>
+  </rdf:Description>
+
+  <ns1:Mission rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#mission">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>mis1</ns1:identifier>
+    <ns1:title>Mission 1</ns1:title>
+    <ns1:description>Cultivar las disciplinas de Ciencias de la Computación y Tecnologías de la Información, a fin de contribuir en la formación de profesionales a través de la docencia de pre y postgrado, difundiendo el conocimiento asociado a estas, tanto a la comunidad científica como a la sociedad en su conjunto, impulsando el emprendimiento y la innovación para el desarrollo regional y nacional.</ns1:description>
+    <ns1:makesOperative rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#vision"/>
+    <ns1:isPlanedByMeansOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#strategy1"/>
+  </ns1:Mission>
+
+  <ns1:Vision rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#vision">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>vis1</ns1:identifier>
+    <ns1:title>Vision 1</ns1:title>
+    <ns1:description>Ser reconocido por su aporte académico y científico en el área de Ciencias de la Computación y  Tecnologías de Información a nivel regional, nacional e internacional; con un cuerpo académico de excelencia, vinculado con el medio, integrado a redes científicas y académicas, que contribuya a la formación de personas integrales y socialmente responsables.</ns1:description>
+  </ns1:Vision>
+
+  <ns1:Strategy rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#strategy1">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>str1</ns1:identifier>
+    <ns1:title>Strategy 1</ns1:title>
+    <ns1:description>DOCENCIA DE PREGRADO FORMANDO PERSONAS INTEGRALES DE EXCELENCIA PARA EL DESARROLLO DE LA SOCIEDAD.</ns1:description>
+    <ns1:isPlanedByMeansOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#mission"/>
+    <ns1:supports rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal1"/>
+    <ns1:supports rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal2"/>
+    <ns1:supports rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal3"/>
+    <ns1:supports rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal4"/>
+    <ns1:supports rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal5"/>
+  </ns1:Strategy>
+
+  <ns1:Goal rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal1">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>goa1</ns1:identifier>
+    <ns1:title>Goal 1</ns1:title>
+    <ns1:description>Implementar sistema de seguimiento y monitoreo de los programas de pregrado renovados, considerando las normativas institucionales, planes de capacitación pedagógica para docentes y uso de plataformas y TICS.</ns1:description>
+    <ns1:amplifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#vision"/>
+  </ns1:Goal>
+
+  <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective1">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>obj1</ns1:identifier>
+    <ns1:title>Objective 1</ns1:title>
+    <ns1:description>Convertir los programas de asignatura impartidas por el DCCTI al nuevo modelo educativo de la UBB - 100% de las asignaturas renovadas.</ns1:description>
+    <ns1:measure>(N° de asignaturas renovadas / N° de asignaturas que solicitan renovación al DCCTI) * 100.</ns1:measure>
+    <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+    <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal1"/>
+  </ns1:Objective>
+
+  <ns1:Tactic rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#tactic2">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>tac2</ns1:identifier>
+    <ns1:title>Tactic 2</ns1:title>
+    <ns1:validity>does not record validity</ns1:validity>
+    <ns1:description>Fortalecer el proceso de autoevaluación permanente para lograr y mantener la acreditación de la totalidad de los programas de pregrado y postgrado acreditables.</ns1:description>
+    <ns1:implements rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#strategy1"/>
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective4">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj4</ns1:identifier>
+        <ns1:title>Objective 4</ns1:title>
+        <ns1:description>Participar de reuniones por área de especialidad, para analizar y promover mejoras en planes de estudio y metodologías empleadas el en aula - 100% de asistentes.</ns1:description>
+        <ns1:measure>(N° de asistentes / N° de invitados)*100.</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal2"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+  </ns1:Tactic>
+
+  <ns1:Goal rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal2">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>goa2</ns1:identifier>
+    <ns1:title>Goal 2</ns1:title>
+    <ns1:description>Potenciar los procesos de autoevaluación de pre y post grado a través de la formalización de comités internos y externos, de manera de mejorar los resultados de Acreditación.</ns1:description>
+    <ns1:amplifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#vision"/>
+  </ns1:Goal>
+
+  <ns1:Tactic rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#tactic3">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>tac3</ns1:identifier>
+    <ns1:title>Tactic 3</ns1:title>
+    <ns1:validity>does not record validity</ns1:validity>
+    <ns1:description>Establecer políticas y gestionar recursos para mejorar la infraestructura y equipamiento para el desarrollo de las actividades académicas, docentes y extra programáticas de los estudiantes de la Universidad del Bío-Bío.</ns1:description>
+    <ns1:implements rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#strategy1"/>
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective5">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj5</ns1:identifier>
+        <ns1:title>Objective 5</ns1:title>
+        <ns1:description>Elaborar un Plan de adquisición anual de equipamiento e insumos básicos - Plan elaborado y ejecutado al 100%</ns1:description>
+        <ns1:measure>Plan elaborado</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal3"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective6">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj6</ns1:identifier>
+        <ns1:title>Objective 6</ns1:title>
+        <ns1:description>Participar en la elaboración de un Plan de mejora anual de equipamiento por asignatura - Plan elaborado y ejecutado al 100% </ns1:description>
+        <ns1:measure>plan formulado</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal3"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+  </ns1:Tactic>
+
+  <ns1:Goal rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal3">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>goa3</ns1:identifier>
+    <ns1:title>Goal 3</ns1:title>
+    <ns1:description>Mejorar la infraestructura y equipamiento para el desarrollo de las actividades académicas de pre y post grado.</ns1:description>
+    <ns1:amplifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#vision"/>
+  </ns1:Goal>
+
+  <ns1:Tactic rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#tactic4">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>tac4</ns1:identifier>
+    <ns1:title>Tactic 4</ns1:title>
+    <ns1:validity>does not record validity</ns1:validity>
+    <ns1:description>Fortalecer los procesos de articulación vertical, con la enseñanza media, tanto científico-humanista como técnico profesional, los programas de inserción y adaptación a la vida universitaria con la finalidad de mejorar la admisión y posicionar la oferta académica de la Universidad del Bío-Bío.</ns1:description>
+    <ns1:implements rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#strategy1"/>
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective7">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj7</ns1:identifier>
+        <ns1:title>Objective 7</ns1:title>
+        <ns1:description>Definir y/o desarrollar actividades tendientes a la articulación vertical (talleres, capacitaciones, otras). - 100% de actividades planificadas realizadas</ns1:description>
+        <ns1:measure>(N° actividades realizadas / N° actividades planificadas)*100</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal4"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+  </ns1:Tactic>
+
+  <ns1:Goal rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal4">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>goa4</ns1:identifier>
+    <ns1:title>Goal 4</ns1:title>
+    <ns1:description>Fomentar la integración vertical con liceos, científicos humanistas, técnicos profesionales y CFT.</ns1:description>
+    <ns1:amplifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#vision"/>
+  </ns1:Goal>
+
+  <ns1:Tactic rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#tactic5">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>tac5</ns1:identifier>
+    <ns1:title>Tactic 5</ns1:title>
+    <ns1:validity>does not record validity</ns1:validity>
+    <ns1:description>Potenciar las capacidades y competencias docentes de la dotación académica de la Universidad del Bío-Bío, para mejorar el desempeño en el aula y favorecer el desarrollo de la investigación en docencia.</ns1:description>
+    <ns1:implements rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#strategy1"/>
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective8">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj8</ns1:identifier>
+        <ns1:title>Objective 8</ns1:title>
+        <ns1:description>Incentivar la participación en proyectos de investigación en docencia de pregrado - 20%</ns1:description>
+        <ns1:measure>(N° de docentes que postulan a proyectos internos (FDD o FIDIE) / N° de docentes del DCCTI)*100</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal5"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective9">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj9</ns1:identifier>
+        <ns1:title>Objective 9</ns1:title>
+        <ns1:description>Incentivar la participación de docentes en programas de capacitación ligados a las metodologías de enseñanza-aprendizaje en el aula y herramientas de gestión institucional - 100% </ns1:description>
+        <ns1:measure>(N° de docentes del DCCTI que han participado en cursos de capacitación docente/ N° de docentes del DCCTI.)*100</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal5"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+  </ns1:Tactic>
+
+  <ns1:Goal rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal5">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>goa5</ns1:identifier>
+    <ns1:title>Goal 5</ns1:title>
+    <ns1:description>Fomentar la investigación en docencia e incentivar la participación de académicos en programas de capacitación docente.</ns1:description>
+    <ns1:amplifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#vision"/>
+  </ns1:Goal>
+
+  <ns1:Strategy rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#strategy2">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>str2</ns1:identifier>
+    <ns1:title>Strategy 2</ns1:title>
+    <ns1:description>INVESTIGACIÓN, DESARROLLO E INNOVACIÓN APORTANDO CONOCIMIENTO AVANZADO AL ENTORNO.</ns1:description>
+    <ns1:isPlanedByMeansOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#mission"/>
+    <ns1:supports rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal6"/>
+    <ns1:supports rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal7"/>
+    <ns1:supports>
+      <ns1:Goal rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal8">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>goa8</ns1:identifier>
+        <ns1:title>Goal 8</ns1:title>
+        <ns1:description>Fortalecer políticas y mecanismos internos de la FACE en I+D+i+e y postgrado para alcanzar una mayor y mejor productividad.</ns1:description>
+        <ns1:amplifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#vision"/>
+      </ns1:Goal>
+    </ns1:supports>
+
+  </ns1:Strategy>
+
+  <ns1:Tactic rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#tactic6">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>tac6</ns1:identifier>
+    <ns1:title>Tactic 6</ns1:title>
+    <ns1:validity>does not record validity</ns1:validity>
+    <ns1:description>Consolidar la investigación y el postgrado como pilar fundamental de la productividad científica y su aporte como generador de capital humano avanzado de estándar internacional.</ns1:description>
+    <ns1:implements rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#strategy2"/>
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective10">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj10</ns1:identifier>
+        <ns1:title>Objective 10</ns1:title>
+        <ns1:description>Fortalecer el perfil de investigador entre académicos</ns1:description>
+        <ns1:measure>N° de proyectos de iniciación UBB aprobados / JCE - 3 proyectos en el periodo</ns1:measure>
+        <ns1:measure>N° de proyectos regulares aprobados UBB / JCE - 4 proyectos en el periodo</ns1:measure>
+        <ns1:measure>N° proyectos de investigación externos presentados /JCE - 7 proyectos y 3 grupos</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal6"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective11">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj11</ns1:identifier>
+        <ns1:title>Objective 11</ns1:title>
+        <ns1:description>Incentivar la participación de estudiantes de pre y postgrado en proyectos y grupos de investigación</ns1:description>
+        <ns1:measure>N° estudiantes que participan en grupos y proyectos de investigación - 10 estudiantes (considerando 7 proyectos y 3 grupos)</ns1:measure>
+        <ns1:measure>N° actividades de difusión de eventos (congresos, seminarios, etc.) - 4 actividades (una por año como mínimo)</ns1:measure>
+        <ns1:measure>Nro de estudiantes participantes en congresos - 10 estudiantes considerando que cada uno está involucrado en un artículo</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal6"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective12">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj12</ns1:identifier>
+        <ns1:title>Objective 12</ns1:title>
+        <ns1:description>Incrementar el número de publicaciones indexadas en ISI, SciELO y Scopu</ns1:description>
+        <ns1:measure>Nº artículos enviados a revistas ISI y Scielo - 4 ISI  6 Scielo</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal6"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+  </ns1:Tactic>
+
+  <ns1:Goal rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal6">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>goa6</ns1:identifier>
+    <ns1:title>Goal 6</ns1:title>
+    <ns1:description>Generar acciones y mecanismos que permitan aumentar la productividad académica en Investigación vinculada especialmente al postgrado.</ns1:description>
+    <ns1:amplifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#vision"/>
+  </ns1:Goal>
+
+  <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective13">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>obj13</ns1:identifier>
+    <ns1:title>Objective 13</ns1:title>
+    <ns1:description>Incentivar el desarrollo de grupos de investigación</ns1:description>
+    <ns1:measure>N° de grupos - 1 en vías de consolidación y 1 grupo en formación</ns1:measure>
+    <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+    <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal6"/>
+  </ns1:Objective>
+
+  <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective14">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>obj14</ns1:identifier>
+    <ns1:title>Objective 14</ns1:title>
+    <ns1:description>Incorporar técnicas y métodos de investigación</ns1:description>
+    <ns1:measure>Nro de cursos de capacitación desarrollados - Dos seminarios de investigación con nuevas técnicas y métodos  Dos seminarios para uso de herramienta</ns1:measure>
+    <ns1:measure>(Nro de académicos participantes en cursos desarrollados /JCE)*100 - 80% JCE participando</ns1:measure>
+    <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+    <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal6"/>
+  </ns1:Objective>
+
+  <ns1:Tactic rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#tactic7">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>tac7</ns1:identifier>
+    <ns1:title>Tactic 7</ns1:title>
+    <ns1:validity>does not record validity</ns1:validity>
+    <ns1:description>Reforzar la vinculación de la investigación, innovación y emprendimiento para un mayor impacto a nivel nacional e internacional.</ns1:description>
+    <ns1:implements rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#strategy2"/>
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective15">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj15</ns1:identifier>
+        <ns1:title>Objective 15</ns1:title>
+        <ns1:description>Promover la movilidad académica haciendo estancias y/o atrayendo capital avanzado</ns1:description>
+        <ns1:measure>Nº visitante - 4 visitas de académicos externos (1 mes cada una visita)</ns1:measure>
+        <ns1:measure>Nº pasantías - Al menos 5 pasantías de 2 meses cada una</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal7"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective16">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj16</ns1:identifier>
+        <ns1:title>Objective 16</ns1:title>
+        <ns1:description>Promover la participación de académicos en sociedades científicas ligadas al quehacer de la facultad</ns1:description>
+        <ns1:measure>(N° de académicos afiliados/N° total JCE)*100 - 100% de los académicos</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal7"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+  </ns1:Tactic>
+
+  <ns1:Goal rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal7">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>goa7</ns1:identifier>
+    <ns1:title>Goal 7</ns1:title>
+    <ns1:description>Generar conocimiento aplicado que contribuya al desarrollo regional y del país</ns1:description>
+    <ns1:amplifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#vision"/>
+  </ns1:Goal>
+
+  <ns1:Tactic rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#tactic8">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>tac8</ns1:identifier>
+    <ns1:title>Tactic 8</ns1:title>
+    <ns1:validity>does not record validity</ns1:validity>
+    <ns1:description>Fortalecer y difundir las políticas y mecanismos existentes en I+D+i+e y postgrado para alcanzar una mayor y mejor productividad global.</ns1:description>
+    <ns1:implements rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#strategy2"/>
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective17">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj17</ns1:identifier>
+        <ns1:title>Objective 17</ns1:title>
+        <ns1:description> Formalizar reuniones de investigación</ns1:description>
+        <ns1:measure>Nº de reuniones realizadas / Nº de reuniones planificadas - Reuniones de divulgación, (i)áreas de trabajo, (ii) métodos y (iii) experiencias. 1 reunión cada 3 meses</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal7"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+  </ns1:Tactic>
+
+  <ns1:Strategy rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#strategy3">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>str3</ns1:identifier>
+    <ns1:title>Strategy 3</ns1:title>
+    <ns1:description>POSTGRADO RESPONDIENDO CON EXCELENCIA A LOS DESAFÍOS DE LA SOCIEDAD.</ns1:description>
+    <ns1:isPlanedByMeansOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#mission"/>
+    <ns1:supports rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal9"/>
+    <ns1:supports rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal10"/>
+    <ns1:supports rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal11"/>
+  </ns1:Strategy>
+
+  <ns1:Tactic rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#tactic9">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>tac6</ns1:identifier>
+    <ns1:title>Tactic 6</ns1:title>
+    <ns1:validity>does not record validity</ns1:validity>
+    <ns1:description>Fortalecer el área de postgrado para posicionarlo en el medio regional y nacional.</ns1:description>
+    <ns1:implements rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#strategy3"/>
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective18">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj18</ns1:identifier>
+        <ns1:title>Objective 18</ns1:title>
+        <ns1:description>Fortalecer la relación entre las actividades de postgrado y de investigación, promoviendo el trabajo asociativo</ns1:description>
+        <ns1:measure>(Número de ponencias/posters aceptadas en conferencias que involucran a alumnos y profesores de postgrado/ Número de ponencias/posters enviados a conferencias que involucran a alumnos y profesores de postgrado)*100 - 50% de aceptación de ponencias / posters enviados a conferencias </ns1:measure>
+        <ns1:measure>(Número de artículos enviados a Revistas indexadas/ Número de tesis Terminadas en programas académicos)*100 - 100% de las tesis terminadas, de programas académicos, con un artículo enviado a una revista indexada</ns1:measure>
+        <ns1:measure>(Número de tesis vinculadas a Proyectos o grupos de investigación de académicos del DCCTI/Número de tesis desarrolladas)*100 - 50% de las tesis vinculadas a proyectos o grupos de investigación de académicos.</ns1:measure>
+        <ns1:measure>Nro. de actividades de difusión del trabajo de académicos del DCCTI en investigación asociado a proyectos y/o grupos, dirigidas a alumnos de postgrado y pregrado últimos años - 2 anuales</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal9"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective19">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj19</ns1:identifier>
+        <ns1:title>Objective 19</ns1:title>
+        <ns1:description>Implementar una estrategia de fortalecimiento del MCC orientada a su próxima acreditación.</ns1:description>
+        <ns1:measure>(Nro. de académicos que participan en publicaciones/Nro. de académicos del DCCTI)*100 - 100 % de participación por año.</ns1:measure>
+        <ns1:measure>(Nro de académicos del DCCTI que poseen la categoría C de postgrado UBB/ Nro. total de académicos del DCCTI que participan en el MCC)*100 - 80 % de participación</ns1:measure>
+        <ns1:measure>(Nro de académicos del DCCTI que participan en la elaboración de informe de autoevaluación/Nro. total de académicos del DCCTI que participan en el MCC)*100 - 100 % de participación</ns1:measure>
+        <ns1:measure>(Nro. de proyectos de investigación externos enviados por académicos del núcleo del MCC/Nro. de académicos del núcleo )*100 - 100 % de participación.</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal9"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective20">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj20</ns1:identifier>
+        <ns1:title>Objective 20</ns1:title>
+        <ns1:description>Formular e implementar un plan de fortalecimiento de infraestructura y equipamiento del postgrado</ns1:description>
+        <ns1:measure>(Número de espacios de trabajo para estudiantes del MCC/Número de estudiantes del MCC)*100 - Espacio disponible para el 50 % de los estudiantes.</ns1:measure>
+        <ns1:measure>Proyecto de ampliación del espacio destinado para alumnos de postgrado (trabajo y convivencia) - 1 proyecto presentado a la facultad</ns1:measure>
+        <ns1:measure>Nro. salas habilitadas para dictar clases por video conferencia - 1 sala en el periodo</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal9"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+  </ns1:Tactic>
+
+  <ns1:Goal rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal9">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>goa9</ns1:identifier>
+    <ns1:title>Goal 9</ns1:title>
+    <ns1:description>Implementar un plan de fortalecimiento del postgrado del DCCTI para su posicionamiento.</ns1:description>
+    <ns1:amplifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#vision"/>
+  </ns1:Goal>
+
+  <ns1:Tactic rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#tactic10">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>tac10</ns1:identifier>
+    <ns1:title>Tactic 10</ns1:title>
+    <ns1:validity>does not record validity</ns1:validity>
+    <ns1:description>Fortalecer la institucionalidad del área de postgrado e Investigación que asegure una gestión eficiente, sostenible y de calidad.</ns1:description>
+    <ns1:implements rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#strategy3"/>
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective21">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj21</ns1:identifier>
+        <ns1:title>Objective 21</ns1:title>
+        <ns1:description>Iniciar y avanzar en la renovación curricular del MCC - </ns1:description>
+        <ns1:measure>MCC con Sistema de Créditos Transferibles implementados - MCC con sistema de créditos transferibles implementado en el período</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal10"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective22">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj22</ns1:identifier>
+        <ns1:title>Objective 22</ns1:title>
+        <ns1:description>Aumentar la planta docente con académicos que contribuyan al postgrado - </ns1:description>
+        <ns1:measure> Nro. contrataciones de doctores  -  2 contrataciones en el período</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal10"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+  </ns1:Tactic>
+
+  <ns1:Goal rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal10">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>goa10</ns1:identifier>
+    <ns1:title>Goal 10</ns1:title>
+    <ns1:description>Generar mecanismos que permitan fortalecer la institucionalidad del postgrado e investigación</ns1:description>
+    <ns1:amplifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#vision"/>
+  </ns1:Goal>
+
+  <ns1:Tactic rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#tactic11">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>tac11</ns1:identifier>
+    <ns1:title>Tactic 11</ns1:title>
+    <ns1:validity>does not record validity</ns1:validity>
+    <ns1:description>Avanzar en la internacionalización del postgrado contribuyendo al prestigio institucional.</ns1:description>
+    <ns1:implements rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#strategy3"/>
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective23">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj23</ns1:identifier>
+        <ns1:title>Objective 23</ns1:title>
+        <ns1:description>Establecer vínculos de cooperación con otros departamentos de la disciplina</ns1:description>
+        <ns1:measure>Nro. de reuniones con otros deptos. de la disciplina de universidades nacionales y/o extranjeras - 2 reuniones anuales.</ns1:measure>
+        <ns1:measure>(Número de tribunales de defensa de tesis con participación de académicos de otras Universidades Nacionales o Extranjeras/Número de tribunales de defensa Tesis)*100 - 70% de tribunales de defensa tesis del MCC con académicos de otras universidades.</ns1:measure>
+        <ns1:measure>(Número de tribunales de defensa de propuesta tesis con participación de académicos de otras Universidades Nacionales o Extranjeras/Número de tribunales de defensa de propuesta de Tesis)*100 - 80% de tribunales de defensa de propuesta tesis del MCC con académicos de otras universidades</ns1:measure>
+        <ns1:measure>Número académicos JC del DCCTI que participan en tribunales de tesis de otras universidades - 1 participación por año.</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal11"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective24">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj24</ns1:identifier>
+        <ns1:title>Objective 24</ns1:title>
+        <ns1:description>Avanzar hacia el alcance de presencia nacional e internacional a través del postgrado</ns1:description>
+        <ns1:measure>Nro. de ponencias, de trabajos de estudiantes de postgrado, presentadas en conferencias y que involucran a profesores del DCCT - 2 ponencias por año</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal11"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective25">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj25</ns1:identifier>
+        <ns1:title>Objective 25</ns1:title>
+        <ns1:description>Incentivar el desarrollo de pasantías en otras universidades</ns1:description>
+        <ns1:measure>Nro. de pasantías realizadas por los docentes del DCCTI. - Nro. de pasantías realizadas por los docentes del DCCTI.</ns1:measure>
+        <ns1:measure>Nro. de pasantías realizadas por estudiantes del MCC - 1 pasantía al año</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal11"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+  </ns1:Tactic>
+
+  <ns1:Goal rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal11">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>goa11</ns1:identifier>
+    <ns1:title>Goal 11</ns1:title>
+    <ns1:description>Fortalecer las redes nacionales e internacionales para programas de postgrado</ns1:description>
+    <ns1:amplifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#vision"/>
+  </ns1:Goal>
+
+  <ns1:Strategy rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#strategy4">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>str4</ns1:identifier>
+    <ns1:title>Strategy 4</ns1:title>
+    <ns1:description>POSTGRADO RESPONDIENDO CON EXCELENCIA A LOS DESAFÍOS DE LA SOCIEDAD.</ns1:description>
+    <ns1:isPlanedByMeansOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#mission"/>
+    <ns1:supports rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal12"/>
+    <ns1:supports rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal13"/>
+    <ns1:supports rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal14"/>
+  </ns1:Strategy>
+
+  <ns1:Tactic rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#tactic12">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>tac12</ns1:identifier>
+    <ns1:title>Tactic 12</ns1:title>
+    <ns1:validity>does not record validity</ns1:validity>
+    <ns1:description>Posicionar la marca Universidad del Bío-Bío</ns1:description>
+    <ns1:implements rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#strategy4"/>
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective26">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj18</ns1:identifier>
+        <ns1:title>Objective 18</ns1:title>
+        <ns1:description>Fomentar la participación de docentes en actividades de posicionamiento disciplinario</ns1:description>
+        <ns1:measure>Número de asistentes/ Total de Invitados - Organización de un seminario anual de trabajos de investigación, tesis de magister y proyectos de título</ns1:measure>
+        <ns1:measure>Número de actualizaciones mensuales de la página web del departamento - Página web del depto actualizada y Participación en redes sociales</ns1:measure>
+        <ns1:measure>Número de noticias en web de la UBB - Presencia de 2 académicos en la web de la UBB, con trabajos asociados a sus disciplinas </ns1:measure>
+        <ns1:measure>Número De seminarios realizados - Organización de 3 seminarios dirigidos a la comunidad</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal12"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective27">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj27</ns1:identifier>
+        <ns1:title>Objective 27</ns1:title>
+        <ns1:description>Crear Laboratorio de investigación y desarrollo en ingeniería de software</ns1:description>
+        <ns1:measure>Laboratorio creado - Laboratorio institucionalizado y en operaciones</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal12"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+  </ns1:Tactic>
+
+  <ns1:Goal rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal12">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>goa12</ns1:identifier>
+    <ns1:title>Goal 12</ns1:title>
+    <ns1:description>Generar mecanismos de un plan de posicionamiento disciplinario del DCCTI.</ns1:description>
+    <ns1:amplifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#vision"/>
+  </ns1:Goal>
+
+  <ns1:Tactic rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#tactic13">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>tac13</ns1:identifier>
+    <ns1:title>Tactic 13</ns1:title>
+    <ns1:validity>does not record validity</ns1:validity>
+    <ns1:description>Impulsar el uso de las redes de intercambio estudiantil y académico para la internacionalización de la Universidad del Bío-Bío</ns1:description>
+    <ns1:implements rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#strategy4"/>
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective28">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj28</ns1:identifier>
+        <ns1:title>Objective 28</ns1:title>
+        <ns1:description>Gestionar protocolos de colaboración con organizaciones nacionales con vínculos internacionales</ns1:description>
+        <ns1:measure>Número De Protocolos formalizados - 3 protocolos formalizados</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal13"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+  </ns1:Tactic>
+
+  <ns1:Goal rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal13">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>goa13</ns1:identifier>
+    <ns1:title>Goal 13</ns1:title>
+    <ns1:description>Utilizar las redes de intercambio estudiantil y académico para la internacionalización del Departamento</ns1:description>
+    <ns1:amplifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#vision"/>
+  </ns1:Goal>
+
+  <ns1:Tactic rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#tactic14">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>tac14</ns1:identifier>
+    <ns1:title>Tactic 14</ns1:title>
+    <ns1:validity>does not record validity</ns1:validity>
+    <ns1:description>Fortalecer los programas que desarrollan los ámbitos de vinculación con el medio</ns1:description>
+    <ns1:implements rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#strategy4"/>
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective29">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj29</ns1:identifier>
+        <ns1:title>Objective 29</ns1:title>
+        <ns1:description>Fomentar la participación en Proyectos con financiamientos externo y contraparte externa</ns1:description>
+        <ns1:measure>(Número De docentes postulando o participando / total de docentes del DCCTI)*100 - Al menos el 20% de los docentes del departamento postulando a proyectos </ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal14"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+  </ns1:Tactic>
+
+  <ns1:Goal rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal14">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>goa14</ns1:identifier>
+    <ns1:title>Goal 14</ns1:title>
+    <ns1:description>Acrecentar la participación de académicos y estudiantes de pre y postgrado en proyectos concursables internos y externos de transferencia tecnológica</ns1:description>
+    <ns1:amplifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#vision"/>
+  </ns1:Goal>
+
+  <ns1:Tactic rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#tactic15">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>tac15</ns1:identifier>
+    <ns1:title>Tactic 15</ns1:title>
+    <ns1:validity>does not record validity</ns1:validity>
+    <ns1:description>Involucrar a estudiantes de pre y postgrado en actividades de vinculación con el medio contribuyendo a su formación integral</ns1:description>
+    <ns1:implements rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#strategy4"/>
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective30">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj30</ns1:identifier>
+        <ns1:title>Objective 30</ns1:title>
+        <ns1:description>Difundir mecanismos de postulación a proyectos de vinculación con el medio interno y externos</ns1:description>
+        <ns1:measure>Número de actividades de difusión realizadas - Realizar 5 (una al año) actividades de difusión</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal15"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective31">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj31</ns1:identifier>
+        <ns1:title>Objective 31</ns1:title>
+        <ns1:description>Desarrollar proyectos de extensión</ns1:description>
+        <ns1:measure>Proyectos adjudicados - 2 proyectos desarrollados al año dirigidos por docentes del DCCTI con participación de estudiante</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal15"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective32">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj32</ns1:identifier>
+        <ns1:title>Objective 32</ns1:title>
+        <ns1:description>Desarrollar proyectos de título en empresas</ns1:description>
+        <ns1:measure>Proyectos finalizados - Mantener al menos un proyecto semestral.</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal15"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+  </ns1:Tactic>
+
+  <ns1:Goal rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal15">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>goa15</ns1:identifier>
+    <ns1:title>Goal 15</ns1:title>
+    <ns1:description>Incrementar participación de estudiantes de pre y postgrado en vinculación con el medio.</ns1:description>
+    <ns1:amplifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#vision"/>
+  </ns1:Goal>
+
+  <ns1:Strategy rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#strategy5">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>str5</ns1:identifier>
+    <ns1:title>Strategy 5</ns1:title>
+    <ns1:description></ns1:description>
+    <ns1:isPlanedByMeansOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#mission"/>
+    <ns1:supports rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal16"/>
+    <ns1:supports rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal17"/>
+    <ns1:supports rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal18"/>
+  </ns1:Strategy>
+
+  <ns1:Tactic rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#tactic16">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>tac16</ns1:identifier>
+    <ns1:title>Tactic 16</ns1:title>
+    <ns1:validity>does not record validity</ns1:validity>
+    <ns1:description>Consolidar la gestión administrativa eficiente y de calidad, que de apoyo a la academia</ns1:description>
+    <ns1:implements rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#strategy5"/>
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective33">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj33</ns1:identifier>
+        <ns1:title>Objective 33</ns1:title>
+        <ns1:description>Realizar un diagnóstico del sistema de gestión del DCCTI, en términos de contrataciones, procedimientos administrativos, control de la docencia entre otros.</ns1:description>
+        <ns1:measure>Informe de diagnóstico finalizado - Octubre de 2015</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal16"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective34">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj34</ns1:identifier>
+        <ns1:title>Objective 34</ns1:title>
+        <ns1:description>Diseñar procedimientos administración e Implementar un sistema informático que apoye la gestión del departamento en ámbitos de docencia e investigación</ns1:description>
+        <ns1:measure>Informe con procedimientos - Diciembre de 2016</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal16"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+  </ns1:Tactic>
+
+  <ns1:Goal rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal16">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>goa16</ns1:identifier>
+    <ns1:title>Goal 16</ns1:title>
+    <ns1:description>Disponer de mecanismos y/o protocolos que permitan consolidar la gestión administrativa para brindar apoyo a la academia.</ns1:description>
+    <ns1:amplifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#vision"/>
+  </ns1:Goal>
+
+  <ns1:Tactic rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#tactic17">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>tac17</ns1:identifier>
+    <ns1:title>Tactic 17</ns1:title>
+    <ns1:validity>does not record validity</ns1:validity>
+    <ns1:description>Consolidar los procesos de planificación, seguimiento y ajuste de prioridades en el quehacer de la Universidad</ns1:description>
+    <ns1:implements rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#strategy5"/>
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective35">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj35</ns1:identifier>
+        <ns1:title>Objective 35</ns1:title>
+        <ns1:description>Ajustar las actividades del DCCTI al plan de desarrollo estratégico del DCCTI.</ns1:description>
+        <ns1:measure>N° de acciones vinculadas a objetivos estratégicos - 100% propuestas alineadas con el plan estratégico</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal17"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective36">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj36</ns1:identifier>
+        <ns1:title>Objective 36</ns1:title>
+        <ns1:description>Evaluar periódicamente el desarrollo del plan estratégico del DCCTI.</ns1:description>
+        <ns1:measure>N° de evaluaciones realizadas - 1 Evaluación anual </ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal17"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+  </ns1:Tactic>
+
+  <ns1:Goal rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal17">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>goa17</ns1:identifier>
+    <ns1:title>Goal 17</ns1:title>
+    <ns1:description>Disponer acciones y mecanismos que permitan seguimiento y ajuste de prioridades de los procesos de planificación estratégica del DCCTI</ns1:description>
+    <ns1:amplifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#vision"/>
+  </ns1:Goal>
+
+  <ns1:Tactic rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#tactic18">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>tac18</ns1:identifier>
+    <ns1:title>Tactic 18</ns1:title>
+    <ns1:validity>does not record validity</ns1:validity>
+    <ns1:description>Fortalecer el clima laboral y la identidad institucional</ns1:description>
+    <ns1:implements rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#strategy5"/>
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective37">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj37</ns1:identifier>
+        <ns1:title>Objective 37</ns1:title>
+        <ns1:description>proponer espacios y ambientes seguros que favorezcan la interacción entre estudiantes, administrativos y académicos de la Facultad. (cafetería, espacios de descanso, ocio y esparcimiento)</ns1:description>
+        <ns1:measure>porcentaje de incremento respecto de los espacios actuales - Meta: 20%</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal18"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+    <ns1:achieves>
+      <ns1:Objective rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#objective38">
+        <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+        <ns1:identifier>obj38</ns1:identifier>
+        <ns1:title>Objective 38</ns1:title>
+        <ns1:description>Establecer un plan de fortalecimiento del clima laboral.</ns1:description>
+        <ns1:measure>plan formulado - Plan entrgado a decanatura</ns1:measure>
+        <ns1:timetargeted>04-05-2015 al 31-12-2019</ns1:timetargeted>
+        <ns1:quantifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal18"/>
+      </ns1:Objective>
+    </ns1:achieves>
+
+  </ns1:Tactic>
+
+  <ns1:Goal rdf:about="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#goal18">
+    <ns1:elementOf rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#plan2015"/>
+    <ns1:identifier>goa18</ns1:identifier>
+    <ns1:title>Goal 18</ns1:title>
+    <ns1:description>Aplicación de prácticas de recursos humanos que permitan lograr el fortalecimiento del clima laboral y la identidad institucional</ns1:description>
+    <ns1:amplifies rdf:resource="http://parra.chillan.ubiobio.cl:8070/clamunoz/planes/dccti/dccti#vision"/>
+  </ns1:Goal>
+
+</rdf:RDF>
